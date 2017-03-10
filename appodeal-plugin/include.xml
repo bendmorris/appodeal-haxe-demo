@@ -24,6 +24,8 @@
 
         <ios linker-flags="-ObjC" />
 	    <ios linker-flags="-fobjc-arc" unless="fobjc-arc-included" />
+        <ios linker-flags="-framework Appodeal -F /Users/ben/Dev/appodeal-haxe-demo/appodeal-plugin/frameworks -L/usr/lib -lxml2.2 -lsqlite3" />
+		<!--frameworkSearchPaths value="frameworks"/-->
 
         <dependency name="z"/>
         <dependency name="c++"/>
